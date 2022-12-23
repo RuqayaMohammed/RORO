@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 
-sal = pd.read_csv('https://raw.githubusercontent.com/RuqayaMohammed/Data/main/DataS/salary.csv?token=GHSAT0AAAAAAB4VQCHCXFHIOK5DNZNLXHESY5FOEMQ')
+sal = pd.read_csv('salary.csv')
 st.title('Data Science Job Salaries')
 st.write('''This site shows charts of dataset about salaries of jobs in data science domain
 the dataset has 11 columns with 607 rows as following: \n
