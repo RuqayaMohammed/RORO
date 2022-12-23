@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd
 import altair as alt
-sal = pd.read_csv('salary.csv')
+sal = pd.read_csv('https://raw.githubusercontent.com/RuqayaMohammed/Data/main/DataS/salary.csv?token=GHSAT0AAAAAAB4VQCHCXFHIOK5DNZNLXHESY5FOEMQ')
 st.title('Data Science Job Salaries')
 jtype = st.selectbox("Select the job type to know in which country avilable with its averag salary in USD",
                      sal['job_title'].unique())
