@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd
 import altair as alt
-sal = pd.read_csv('salary.csv')
+sal = pd.read_csv('https://raw.githubusercontent.com/RuqayaMohammed/RORO/main/DataS/salary.csv')
 st.title('Data Science Job Salaries')
 ur='https://cdn-icons-png.flaticon.com/512/261/261778.png'
 s6=alt.Chart(sal).mark_image(url=ur).encode( x='country', size='salary_in_usd', y='salary_in_usd').interactive()
